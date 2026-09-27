@@ -233,3 +233,10 @@ Python Essentials Project
 ## ⭐ If you like this project
 
 Give the repository a ⭐ on GitHub!
+
+<img width="328" height="203" alt="image" src="https://github.com/user-attachments/assets/d3587e97-9fd9-4b3b-89bc-1c3a244ff9c7" />
+
+<img width="304" height="241" alt="image" src="https://github.com/user-attachments/assets/7ba17a48-2409-4b01-9d15-f0a11a4016fa" />
+
+
+
