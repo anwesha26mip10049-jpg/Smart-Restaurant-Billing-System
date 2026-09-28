@@ -1,311 +1,242 @@
-# Smart Restaurant Billing & Order Management System
+# 🍽️ Smart Restaurant Billing & Order Management System
 
-<img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
-
-<img src="https://img.shields.io/badge/Project-Python%20Essentials-green?style=for-the-badge">
-
-<img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Project-Python%20Essentials-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge">
+</p>
 
 ---
 
-Overview
+## 📖 Overview
 
-Smart Restaurant Billing & Order Management System is a simple command line program built using Python. This project is used to facilitate billing in the restaurant.
+Smart Restaurant Billing & Order Management System is a Python-based command-line application designed to automate restaurant billing operations.
 
 The system allows restaurant staff to:
 
-Take customer orders
+✅ Take customer orders  
+✅ Generate bills automatically  
+✅ Apply discounts  
+✅ Calculate GST  
+✅ Track daily sales  
+✅ View analytics and reports
 
-Generate bills automatically
-
-Apply discounts
-
-Calculate GST
-
-Track daily sales
-
-View analytics and reports
-
-This project was created as part of the Python Essentials Course Project.
+This project was developed as part of the **Python Essentials Course Project**.
 
 ---
 
-Problem Statement
+## 🎯 Problem Statement
 
-Numerous small-scale eateries and stalls still manage billing on paper. The results of this procedure are:
+Many small restaurants and food stalls still perform billing manually. This process can lead to:
 
-- Calculation errors
+- ❌ Calculation errors
+- ❌ Longer customer waiting times
+- ❌ Difficulty in tracking sales
+- ❌ Inefficient order management
 
-- Longer customer waiting times
-
-- Difficulty in tracking sales
-
-- Inefficient order management
-
-This project offers an easy automated solution in Python.
+This project provides a simple automated solution using Python.
 
 ---
 
-Features
+## ✨ Features
 
-# Menu Management
-
+### 🍔 Menu Management
 - Display menu items
-
 - Display item prices
-
 - Easy item selection
 
-# Order Processing
-
+### 🛒 Order Processing
 - Multiple item ordering
-
 - Quantity selection
-
 - Item-wise bill calculation
 
-# Billing System
-
+### 💰 Billing System
 - Automatic bill generation
-
 - Discount calculation
-
 - GST calculation
-
 - Final bill generation
 
-# Sales Analytics
-
+### 📊 Sales Analytics
 - Customers served
-
 - Total revenue generated
-
 - Item sales tracking
-
 - Daily report generation
 
 ---
 
-Project Structure
+## 🏗️ Project Structure
 
-``text
+```text
+Restaurant_Billing_System/
 
-RestaurantBillingSystem/
-
-main.py
-
-menu.py
-
-billing.py
-
-analytics.py
-
-README.md
-
-statement.md
-
-Project_Report.pdf
-
-`
+├── main.py
+├── menu.py
+├── billing.py
+├── analytics.py
+├── README.md
+├── statement.md
+└── Project_Report.pdf
+```
 
 ---
 
-Technologies Used
+## 🛠️ Technologies Used
 
-- Python 3
-
+- 🐍 Python 3
 - Functions
-
 - Lists
-
 - Dictionaries
-
 - Loops
-
 - Conditional Statements
-
 - Modules
-
 - Exception Handling
 
 ---
 
-How To Run
+## 🚀 How To Run
 
-# Step 1 Clone Repository
+### Step 1️⃣ Clone Repository
 
-`bash
+```bash
+git clone https://github.com/your-username/Restaurant_Billing_System.git
+```
 
-git clone https://github.com/your-username/RestaurantBillingSystem.git
+### Step 2️⃣ Open Project Folder
 
-`
+```bash
+cd Restaurant_Billing_System
+```
 
-# Step 2 Open Project Folder
+### Step 3️⃣ Run Project
 
-`bash
-
-cd RestaurantBillingSystem
-
-`
-
-# Step 3 Run Project
-
-`bash
-
+```bash
 python main.py
-
-`
+```
 
 ---
 
-Sample Workflow
+## 📋 Sample Workflow
 
-`text
-
+```text
 Start
-
+  ↓
 Display Main Menu
-
+  ↓
 New Customer
-
+  ↓
 Take Order
-
+  ↓
 Generate Bill
-
+  ↓
 Apply Discount & GST
-
+  ↓
 Print Bill
-
+  ↓
 Update Analytics
-
+  ↓
 Exit
-
-`
+```
 
 ---
 
-Sample Output
+## 🖥️ Sample Output
 
-`text
-
+```text
+========================================
+         THALI WALA
 ========================================
 
-THALI WALA
-
-========================================
-
-Customer: Neha
+Customer : Neha
 
 Items Ordered
 
-Pizza x 1 = 150
+Pizza x 1 = ₹150
 
-Subtotal: 150
+Subtotal : ₹150
+GST (5%) : ₹7.5
 
-GST (5%): 7.5
-
-Final Bill: 157.5
+Final Bill : ₹157.5
 
 Thank You For Visiting!
-
 ========================================
-
-``
+```
 
 ---
 
-Testing
+## 🧪 Testing
 
-# Test Case 1
-
+### ✅ Test Case 1
 Valid item selection
 
 Expected Result:
-
 Item added successfully.
 
 ---
 
-# Test Case 2
-
+### ✅ Test Case 2
 Invalid menu choice
 
 Expected Result:
-
 Display error message.
 
 ---
 
-# Test Case 3
-
-Bill above 500
+### ✅ Test Case 3
+Bill above ₹500
 
 Expected Result:
-
 10% discount applied.
 
 ---
 
-# Test Case 4
-
+### ✅ Test Case 4
 Daily Report
 
 Expected Result:
-
 Display customers served and revenue.
 
 ---
 
-Future Enhancements
+## 📈 Future Enhancements
 
-- File Storage
-
-- Database Integration
-
-- Online Ordering
-
-- GUI Version
-
-- Inventory Management
-
-- Customer Database
+- 💾 File Storage
+- 🗄️ Database Integration
+- 🌐 Online Ordering
+- 🖥️ GUI Version
+- 📦 Inventory Management
+- 👥 Customer Database
 
 ---
 
-Concepts Used
+## 📚 Concepts Used
 
-Variables
-
-Input / Output
-
-Loops
-
-Functions
-
-Lists
-
-Dictionaries
-
-Conditional Statements
-
-Modules
-
-Exception Handling
+✔ Variables  
+✔ Input / Output  
+✔ Loops  
+✔ Functions  
+✔ Lists  
+✔ Dictionaries  
+✔ Conditional Statements  
+✔ Modules  
+✔ Exception Handling
 
 ---
 
-Author
+## 👨‍💻 Author
 
-Anwesha Panda
+**Anwesha Panda**
 
 Python Essentials Project
 
 ---
 
-If you like this project
+## ⭐ If you like this project
 
-Give the repository a on GitHub!
+Give the repository a ⭐ on GitHub!
 
 <img width="328" height="203" alt="image" src="https://github.com/user-attachments/assets/d3587e97-9fd9-4b3b-89bc-1c3a244ff9c7" />
 
 <img width="304" height="241" alt="image" src="https://github.com/user-attachments/assets/7ba17a48-2409-4b01-9d15-f0a11a4016fa" />
+
+
+
