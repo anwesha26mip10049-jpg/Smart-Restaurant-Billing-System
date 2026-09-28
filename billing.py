@@ -1,23 +1,22 @@
 # billing.py
-
 from menu import menu, show_menu
 
 import analytics 
 
 def take_order():
 
-    total_bill = 0
-    order_list = []
+    total_bill=0
+    order_list=[]
 
-    more = "y"
+    more="y"
 
-    while more.lower() == "y":
+    while more.lower()=="y":
 
         show_menu()
 
         try:
-            choice = int(input("\nEnter item number: "))
-            qty = int(input("Enter quantity: "))
+            choice=int(input("\nEnter item number: "))
+            qty=int(input("Enter quantity: "))
 
         except ValueError:
             print("Please enter numbers only!")
@@ -25,27 +24,27 @@ def take_order():
 
         if choice in menu:
 
-            if choice == 1:
-                analytics.burger_count += qty
+            if choice==1:
+                analytics.burger_count+=qty
 
-            elif choice == 2:
-                analytics.pizza_count += qty
+            elif choice==2:
+                analytics.pizza_count+=qty
 
-            elif choice == 3:
-                analytics.pasta_count += qty
+            elif choice==3:
+                analytics.pasta_count+=qty
 
-            elif choice == 4:
-                analytics.coke_count += qty
+            elif choice==4:
+                analytics.coke_count+=qty
 
-            elif choice == 5:
-                analytics.icecream_count += qty
+            elif choice==5:
+                analytics.icecream_count+=qty
 
-            item_name = menu[choice][0]
-            price = menu[choice][1]
+            item_name=menu[choice][0]
+            price=menu[choice][1]
 
-            item_total = price * qty
+            item_total=price * qty
 
-            total_bill += item_total
+            total_bill+=item_total
 
             order_list.append(
                 [item_name, qty, item_total]
@@ -56,7 +55,7 @@ def take_order():
         else:
             print("Invalid Choice")
 
-        more = input(
+        more=input(
             "\nDo you want to order more? (y/n): "
         )
 
@@ -65,16 +64,16 @@ def take_order():
 
 def calculate_bill(total_bill):
 
-    discount = 0
+    discount=0
 
-    if total_bill >= 500:
-        discount = total_bill * 0.10
+    if total_bill>=500:
+        discount=total_bill * 0.10
 
-    subtotal = total_bill - discount
+    subtotal=total_bill - discount
 
-    gst = subtotal * 0.05
+    gst=subtotal * 0.05
 
-    final_bill = subtotal + gst
+    final_bill=subtotal + gst
 
     return discount, gst, final_bill
 
