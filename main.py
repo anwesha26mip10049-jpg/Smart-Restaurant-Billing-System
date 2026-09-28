@@ -1,6 +1,6 @@
 # Smart Restaurant Billing System
 
-menu = {
+menu={
     1: ("Burger", 80),
     2: ("Pizza", 150),
     3: ("Pasta", 120),
@@ -8,31 +8,31 @@ menu = {
     5: ("Ice Cream", 60)
 }
 
-customer_name = input("Enter Customer Name: ")
+customer_name=input("Enter Customer Name: ")
 
-total_bill = 0
-order_list = []
+total_bill=0
+order_list=[]
 
-more = "y"
+more="y"
 
-while more.lower() == "y":
+while more.lower()=="y":
 
     print("\n===== MENU =====")
 
     for key in menu:
         print(key, ".", menu[key][0], "- ₹", menu[key][1])
 
-    choice = int(input("\nEnter item number: "))
-    qty = int(input("Enter quantity: "))
+    choice=int(input("\nEnter item number: "))
+    qty=int(input("Enter quantity: "))
 
     if choice in menu:
 
-        item_name = menu[choice][0]
-        price = menu[choice][1]
+        item_name=menu[choice][0]
+        price=menu[choice][1]
 
-        item_total = price * qty
+        item_total=price * qty
 
-        total_bill += item_total
+        total_bill+=item_total
 
         order_list.append([item_name, qty, item_total])
 
@@ -41,20 +41,20 @@ while more.lower() == "y":
     else:
         print("Invalid Choice")
 
-    more = input("\nDo you want to order more? (y/n): ")
+    more=input("\nDo you want to order more? (y/n): ")
 
 # Discount
-discount = 0
+discount=0
 
-if total_bill >= 500:
-    discount = total_bill * 0.10
+if total_bill>=500:
+    discount=total_bill * 0.10
 
-bill_after_discount = total_bill - discount
+bill_after_discount=total_bill - discount
 
 # GST
-gst = bill_after_discount * 0.05
+gst=bill_after_discount * 0.05
 
-final_bill = bill_after_discount + gst
+final_bill=bill_after_discount + gst
 
 # Print Bill
 
@@ -100,17 +100,17 @@ while True:
     print("2. Daily Report")
     print("3. Exit")
 
-    choice = input("\nEnter Choice: ")
+    choice=input("\nEnter Choice: ")
 
-    if choice == "1":
+    if choice=="1":
 
-        customer_name = input(
+        customer_name=input(
             "\nEnter Customer Name: "
         )
 
-        order_list, total_bill = take_order()
+        order_list, total_bill=take_order()
 
-        discount, gst, final_bill = calculate_bill(
+        discount, gst, final_bill=calculate_bill(
             total_bill
         )
 
@@ -123,15 +123,15 @@ while True:
             final_bill
         )
 
-        analytics.customers_served += 1
+        analytics.customers_served+=1
 
         analytics.total_revenue += final_bill
 
-    elif choice == "2":
+    elif choice=="2":
 
         analytics.daily_report()
 
-    elif choice == "3":
+    elif choice=="3":
 
         print("\nThank You!")
         break
@@ -169,6 +169,7 @@ while True:
             "\nEnter Customer Name: "
         )
 
+        
         order_list, total_bill = take_order()
 
         discount, gst, final_bill = calculate_bill(
