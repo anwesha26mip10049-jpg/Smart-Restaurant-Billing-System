@@ -1,4 +1,7 @@
-# 🍽️ Smart Restaurant Billing & Order Management System
+<h1>
+<img width="50" alt="Excited Winnie The Pooh GIF" src="https://github.com/user-attachments/assets/f147ecd2-29ab-416e-96f7-7c5482e72c5b" />
+Smart Restaurant Billing & Order Management System
+<h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python">
