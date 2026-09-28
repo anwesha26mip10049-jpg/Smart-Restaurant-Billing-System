@@ -1,6 +1,6 @@
 # Smart Restaurant Billing System
 
-menu = {
+menu={
     1: ("Burger", 80),
     2: ("Pizza", 150),
     3: ("Pasta", 120),
@@ -18,26 +18,29 @@ def show_menu():
 
 def take_order():
 
-    total_bill = 0
-    order_list = []
+    
+    total_bill=0
+    order_list=[]
 
     more = "y"
 
-    while more.lower() == "y":
+    
+    while more.lower()=="y":
 
         show_menu()
 
-        choice = int(input("\nEnter item number: "))
-        qty = int(input("Enter quantity: "))
+        choice=int(input("\nEnter item number: "))
+        qty=int(input("Enter quantity: "))
 
         if choice in menu:
 
-            item_name = menu[choice][0]
-            price = menu[choice][1]
+            item_name=menu[choice][0]
+            price=menu[choice][1]
 
-            item_total = price * qty
+            item_total=price * qty
 
-            total_bill += item_total
+            
+            total_bill+=item_total
 
             order_list.append([item_name, qty, item_total])
 
@@ -46,23 +49,24 @@ def take_order():
         else:
             print("Invalid Choice")
 
-        more = input("\nDo you want to order more? (y/n): ")
+        more=input("\nDo you want to order more? (y/n): ")
 
     return order_list, total_bill
 
 
 def calculate_bill(total_bill):
 
-    discount = 0
+    discount=0
 
-    if total_bill >= 500:
-        discount = total_bill * 0.10
+    if total_bill>=500:
+        discount=total_bill * 0.10
 
-    subtotal = total_bill - discount
+    
+    subtotal=total_bill - discount
 
-    gst = subtotal * 0.05
+    gst=subtotal * 0.05
 
-    final_bill = subtotal + gst
+    final_bill=subtotal + gst
 
     return discount, gst, final_bill
 
@@ -94,11 +98,13 @@ def print_bill(customer_name, order_list,
 
 # Main Program
 
-customer_name = input("Enter Customer Name: ")
+customer_name=input("Enter Customer Name: ")
 
-order_list, total_bill = take_order()
 
-discount, gst, final_bill = calculate_bill(total_bill)
+order_list, total_bill=take_order()
+
+discount, gst, final_bill=calculate_bill(total_bill)
+
 
 print_bill(customer_name,
            order_list,
